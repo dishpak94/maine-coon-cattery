@@ -92,15 +92,15 @@
 
         </div>
     </header>
-    <main class="">
-        <section class="section pets">
+    <main>
+        <section class="section-pets">
             <div class="section-wrapper pets-wrapper container">
                 <h2 class="section-title pets-title">Питомцы</h2>
                 <p class="section-lead pets-lead">Все представители нашего питомника имеют ветеринарный паспорт с
                     отметками о прививках и документ с родословной</p>
                 <ul class="pets-list">
                     <li class="pets-item">
-                        <a class="pets-tab pets-tab--active" href="#pets-tab-content-1">Коты</a>
+                        <a class="pets-tab pets-tab-active" href="#pets-tab-content-1">Коты</a>
                     </li>
                     <li class="pets-item">
                         <a class="pets-tab" href="#pets-tab-content-2">Кошки</a>
@@ -109,12 +109,46 @@
                         <a class="pets-tab" href="#pets-tab-content-3">Котята</a>
                     </li>
                 </ul>
-
                 <div class="pets-tab-content-wrapper">
+                    <div class="pets-tab-content show slider" id="pets-tab-content-1">
+                      <div class="pets-slider slider-list slider-container">
+                        <div class="gallery slider-wrapper">
+                          <div class="gallery-item gallery-item-top slider-slide">
+                            <picture>
+                              <source type="image/webp" srcset="img/pets-list-1-desktop@1x.webp 1x, img/pets-list-1-desktop@2x.webp 2x">
+                              <img class="gallery-item-img gallery-item-img-top" src="./svg/pets-list-1-desktop@1x.png" srcset="img/pets-list-1-desktop@2x.png 2x" width="518" height="382" alt="Мейн Кун">
+                            </picture>
+                          </div>
+                          <div class="gallery-item gallery-item-bottom slider-slide">
+                            <picture>
+                              <source type="image/webp" srcset="img/pets-list-2-desktop@1x.webp 1x, img/pets-list-2-desktop@2x.webp 2x">
+                              <img class="gallery-item-img gallery-item-img-bottom" src="./svg/pets-list-2-desktop@1x.png" srcset="img/pets-list-2-desktop@2x.png 2x" width="518" height="241" alt="Мейн Кун">
+                            </picture>
+                          </div>
+                          <div class="gallery-item gallery-item-large slider-slide slider-slide-active">
+                            <picture>
+                              <source type="image/webp" srcset="img/pets-list-3-desktop@1x.webp 1x, img/pets-list-3-desktop@2x.webp 2x">
+                              <img class="gallery-item-img gallery-item-img-large" src="./svg/pets-list-3-desktop@1x.png" srcset="img/pets-list-3-desktop@2x.png 2x" width="471" height="485" alt="Мейн Кун">
+                            </picture>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="slider-button slider-button-prev" type="button">
+                        <span class="visually-hidden">Предыдущий слайд</span>
+                      </button>
+                      <button class="slider-button slider-button-next" type="button">
+                        <span class="visually-hidden">Следующий слайд</span>
+                      </button>
+                      <div class="pets-btn-wraper">
+                        <a href="#" class="pets-btn">Смотреть больше</a>
+                      </div>
+                    </div>
+                  </div>
+                 <!- <div class="pets-tab-content-wrapper">
                     <div class="swiper mySwiper">
 
                         <div class="swiper-wrapper">
-                            <!-- Slides -->
+                         
                             <div class="swiper-slide swiper-slide-cat">
                                 <img src="./img/whitecat.png" alt="whitecat">
                             </div>
@@ -150,50 +184,46 @@
                         </div>
 
                     </div>
-                </div>
+                </div>  ->
 
 
-                <div class="pets-btn-wraper">
+               <!- <div class="pets-btn-wraper">
                     <a href="#" class="pets-btn">Смотреть больше</a>
-                </div>
+                </div>  ->
             </div>
             </div>
         </section>
+   
         <section class="section breed-features">
             <div class="container">
-                <div class="section-wrapper breed-features-wrapper">
-                    <h2 class="section-title breed-features-title">Особенности породы</h2>
-                    <p class="section-lead breed-features-lead">Мейн-Кун - это порода, которая вызывает к себе уважение.
-                        Приобретая в свой дом этого
-                        питомца, вы получите умное животное, которому нет равных</p>
-                    <div class="breed-features-image">
-                        <div class="ellipse ">
-                            <div class="ellipse-two">
-                                <img src="./img/orangecat.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="breed-features-list-container">
-                        <ul class="breed-features-list">
-                            <li class="breed-features-item breed-features-item-cohabitation"> Легко уживается в
-                                семьях с детьми или другими животными</li>
-                            <li class="breed-features-item breed-features-item-appearance"> Внешний вид этой кошки
-                                похож на дикую рысь</li>
-                            <li class="breed-features-item breed-features-item-instruction"> Выполняет команды как
-                                дрессированная собака</li>
-                            <li class="breed-features-item breed-features-item-weight"> Вес может достигать 12 кг, а
-                                длина 1 м</li>
-                        </ul>
-                    </div> -->
-                    <!-- <div class="ellipses">
-                        <div class="ellipse "></div>
-                        <div class="ellipse-two"></div>
-                    </div> -->
+              <div class="section-wrapper breed-features-wrapper">
+                <h2 class="section-title breed-features-title">Особенности породы</h2>
+                <p class="section-lead breed-features-lead">
+                  Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных
+                </p>
+                <div class="breed-features-image">
+                  <picture>
+    
+                    <img src="./svg/breed-features-desktop@1x.png"  width="602" height="655" alt="Изображение рыжего Мейн Куна">
+                  </picture>
                 </div>
-
+                <ul class="breed-features-list">
+                  <li class="breed-features-item breed-features-item-cohabitation">
+                    Легко уживается в семьях с детьми или другими животными
+                  </li>
+                  <li class="breed-features-item breed-features-item-instruction">
+                    Выполняет команды как дрессированная собака
+                  </li>
+                  <li class="breed-features-item breed-features-item-weight">
+                    Вес может достигать 12 кг, а длина 1 м
+                  </li>
+                  <li class="breed-features-item breed-features-item-appearance">
+                    Внешний вид этой кошки похож на дикую рысь
+                  </li>
+                </ul>
+              </div>
             </div>
-
-        </section>
+          </section>
         <section class="section advantages">
             <div class="container advantages-wrapper">
                 <div class="section-wrapper">
@@ -520,7 +550,7 @@
                 <div class="swiper team-slider slider-container">
 
                     <div class="team-list swiper-wrapper">
-                        <!-- Slides -->
+                        <!- Slides ->
                         <div class="team-item swiper-slide">
                             <div class="team-wrapper-outer">
                                 <div class="team-img-wrapper">
@@ -695,9 +725,9 @@
                         <input id="block-1" name="accordion-1" type="checkbox" />
                         <label for="block-1">
                             С какого возраста можно забирать котенка из питомника?</label>
-                        <!-- <svg width="18" height="20" viewBox="0 0 18 20"  xmlns="http://www.w3.org/2000/svg">
+                        <!- <svg width="18" height="20" viewBox="0 0 18 20"  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9.93506 9.00879H17.7222V10.9775H9.93506V19.4502H7.80811V10.9775H0.179199V9.00879H7.80811V0.817383H9.93506V9.00879Z" fill="#A07B50"/>
-                                </svg> -->
+                                </svg> ->
                         <article class="text-block-1">
                             <p>
                                 Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, —
@@ -765,7 +795,7 @@
                     <div class="swiper reviews-slider slider-container">
 
                         <div class="reviews-list swiper-wrapper">
-                            <!-- Slides -->
+                            <!- Slides ->
                             <div class="reviews-item swiper-slide">
                                 <div class="reviews-wrapper-outer">
                                     <div class="reviews-img-wrapper">
@@ -968,7 +998,7 @@
                     </a>
 
                 </div>
-                <div class="footer-wrapper-address"><a class="footer-link footer-link--address"
+                <div class="footer-wrapper-address"><a class="footer-link footer-link-address"
                         href="https://www.google.com/maps/search/%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA,+%D0%9F%D1%83%D1%88%D0%BA%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82,+19/@54.9922303,82.8585672,12.23z?hl=ru-RU">Новосибирск,
                         Пушкинский проспект, 19</a></div>
                 <div class="footer-wrapper-telefon"> <a href="tel:+7(383)900-65-68"> +7(383)900-65-68</a></div>
